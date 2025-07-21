@@ -40,6 +40,7 @@
 
             #endregion
 
+            #region 3
             Person[] person = new Person[3];
             for (int i = 0; i < 3; i++)
             {
@@ -68,8 +69,9 @@
 
             Console.WriteLine($"\nThe oldest person is {oldest.name}, Age: {oldest.age}");
         }
-    
-}
+
+        #endregion
+    }
     }
 
 
