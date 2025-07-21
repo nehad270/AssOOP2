@@ -41,37 +41,48 @@
             #endregion
 
             #region 3
-            Person[] person = new Person[3];
-            for (int i = 0; i < 3; i++)
-            {
-                Console.Write($"Enter name of person {i + 1}: ");
-                string name = Console.ReadLine();
+            //    Person[] person = new Person[3];
+            //    for (int i = 0; i < 3; i++)
+            //    {
+            //        Console.Write($"Enter name of person {i + 1}: ");
+            //        string name = Console.ReadLine();
 
-                Console.Write($"Enter age of person {i + 1}: ");
-                int age;
-                while (!int.TryParse(Console.ReadLine(), out age) || age < 0)
-                {
-                    Console.Write("Please enter a valid non-negative age: ");
-                }
+            //        Console.Write($"Enter age of person {i + 1}: ");
+            //        int age;
+            //        while (!int.TryParse(Console.ReadLine(), out age) || age < 0)
+            //        {
+            //            Console.Write("Please enter a valid non-negative age: ");
+            //        }
 
-                person[i] = new Person(age, name);
-            }
+            //        person[i] = new Person(age, name);
+            //    }
 
-            Person oldest = person[0];
+            //    Person oldest = person[0];
 
-            for (int i = 1; i < person.Length; i++)
-            {
-                if (person[i].age > oldest.age)
-                {
-                    oldest = person[i];
-                }
-            }
+            //    for (int i = 1; i < person.Length; i++)
+            //    {
+            //        if (person[i].age > oldest.age)
+            //        {
+            //            oldest = person[i];
+            //        }
+            //    }
 
-            Console.WriteLine($"\nThe oldest person is {oldest.name}, Age: {oldest.age}");
+            //    Console.WriteLine($"\nThe oldest person is {oldest.name}, Age: {oldest.age}");
+            //}
+
+            #endregion
+
+            #region 4
+            Rectangle rec = new Rectangle();
+            rec.HeightValue = 4.5;
+            rec.WidthValue = 9.3;
+            rec.DisplayInfo();
+
+            #endregion
+
+
+
         }
-
-        #endregion
     }
-    }
-
+}
 
